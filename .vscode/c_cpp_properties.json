@@ -10,6 +10,11 @@
             "includePath": [
                 "C:/_Projects/pillDispenser/include",
                 "C:/_Projects/pillDispenser/src",
+                "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit SSD1306",
+                "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit GFX Library",
+                "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit BusIO",
+                "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
+                "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/newlib/platform_include",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/include",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/include/esp_additions/freertos",
@@ -225,7 +230,6 @@
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/RainMaker/src",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SD/src",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SD_MMC/src",
-                "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SPIFFS/src",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SimpleBLE/src",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
@@ -235,7 +239,6 @@
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
-                "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                 ""
             ],
             "browse": {
@@ -243,6 +246,11 @@
                 "path": [
                     "C:/_Projects/pillDispenser/include",
                     "C:/_Projects/pillDispenser/src",
+                    "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit SSD1306",
+                    "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit GFX Library",
+                    "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit BusIO",
+                    "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
+                    "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/newlib/platform_include",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/include",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/include/freertos/include/esp_additions/freertos",
@@ -458,7 +466,6 @@
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/RainMaker/src",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SD/src",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SD_MMC/src",
-                    "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SPIFFS/src",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/SimpleBLE/src",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
@@ -468,7 +475,6 @@
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
-                    "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                     ""
                 ]
             },
