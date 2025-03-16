@@ -10,6 +10,7 @@
             "includePath": [
                 "C:/_Projects/pillDispenser/include",
                 "C:/_Projects/pillDispenser/src",
+                "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/ESP32Servo/src",
                 "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit SSD1306",
                 "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit GFX Library",
                 "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit BusIO",
@@ -208,6 +209,7 @@
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/qio_qspi/include",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/cores/esp32",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/variants/esp32c3",
+                "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Unity/src",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/ArduinoOTA/src",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/AsyncUDP/src",
                 "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/BLE/src",
@@ -246,6 +248,7 @@
                 "path": [
                     "C:/_Projects/pillDispenser/include",
                     "C:/_Projects/pillDispenser/src",
+                    "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/ESP32Servo/src",
                     "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit SSD1306",
                     "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit GFX Library",
                     "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Adafruit BusIO",
@@ -444,6 +447,7 @@
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32c3/qio_qspi/include",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/cores/esp32",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/variants/esp32c3",
+                    "C:/_Projects/pillDispenser/.pio/libdeps/esp32-c3-devkitm-1/Unity/src",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/ArduinoOTA/src",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/AsyncUDP/src",
                     "C:/Users/adamm/.platformio/packages/framework-arduinoespressif32/libraries/BLE/src",
@@ -479,8 +483,10 @@
                 ]
             },
             "defines": [
-                "PLATFORMIO=60117",
+                "PLATFORMIO=60118",
                 "ARDUINO_ESP32C3_DEV",
+                "ARDUINO_USB_MODE=1",
+                "ARDUINO_USB_CDC_ON_BOOT=1",
                 "HAVE_CONFIG_H",
                 "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\"",
                 "UNITY_INCLUDE_CONFIG_H",
