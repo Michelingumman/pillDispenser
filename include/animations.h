@@ -6,9 +6,10 @@
 #include "images.h"
 #include <String.h>
 #include <functional>
+#include <algorithm> // Added for std::max
 
 #define SCREEN_WIDTH 128  // OLED display width
-#define SCREEN_HEIGHT 64  // OLED display height
+#define SCREEN_HEIGHT 32  // OLED display height
 
 // Function pointer type for drawing functions
 typedef void (*DrawFunction)(Adafruit_SSD1306& display, String state);
@@ -60,8 +61,18 @@ inline void showScrollingText(Adafruit_SSD1306& display, String message, int scr
     Serial.print("Text width: ");
     Serial.println(w);
     
-    // Ensure minimum width for very short messages
-    animState.textWidth = (w > 30) ? w : 30;
+    // Get a more accurate text width by calculating character by character
+    // Each character in size 2 is approximately 12 pixels wide
+    int calculatedWidth = message.length() * 12;
+    Serial.print("Calculated width: ");
+    Serial.println(calculatedWidth);
+    
+    // Use the larger of the two width calculations plus extra buffer
+    int textWidth = (int)w;  // Convert uint16_t to int
+    if (calculatedWidth > textWidth) {
+        textWidth = calculatedWidth;
+    }
+    animState.textWidth = textWidth + 20;
     
     // Start text from right edge of screen
     animState.textX = SCREEN_WIDTH;
@@ -96,7 +107,7 @@ inline void updateAnimation(Adafruit_SSD1306& display) {
             animState.textX -= 3; // Scrolling speed
             
             // Check if text scroll is complete (text has completely left the screen)
-            if (animState.textX <= -(animState.textWidth + 20)) {  // Add extra space to ensure text completely exits
+            if (animState.textX <= -(animState.textWidth + 40)) {  // Add extra buffer space to ensure text completely exits
                 // Text has fully scrolled off screen - end animation
                 animState.isAnimating = false;
                 display.clearDisplay();
@@ -188,7 +199,8 @@ inline void drawScrollText(Adafruit_SSD1306& display, String text) {
     display.setTextWrap(false);
     
     // Draw text at current X position (from right to left)
-    display.setCursor(animState.textX, 0); // Position at top of screen
+    // Center text vertically (typical text height for size 2 is 16 pixels)
+    display.setCursor(animState.textX, 9); // Center vertically
     display.print(animState.scrollText);
     display.display();
 }
