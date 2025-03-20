@@ -86,25 +86,7 @@ The codebase is organized into several key components:
 - `images.h` - Bitmap images for animations
 - `secrets.h` - Customizable message storage
 
-## 🔧 Setup & Customization
-
-### Connections
-- OLED display: SDA (pin 6), SCL (pin 7)
-- Servo: pin 3
-- Touch sensor: pin 10
-- LED indicator: pin 8
-
 ### Customization Options
 - **Messages**: Edit the messages array in `secrets.h`
 - **Animations**: Add new animations in `animations.h`
 - **Timing**: Adjust servo speed and animation durations
-
-## 📝 License
-
-[MIT License](LICENSE)
-
----
-
-<div align="center">
-  <small>Built with ESP32 & Arduino • Powered by light sleep technology</small>
-</div>
